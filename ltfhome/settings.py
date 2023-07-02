@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "13.228.225.19", "18.142.128.26","54.254.162.138"]
+ALLOWED_HOSTS = ["losttofound.onrender.com"]
 
 
 # Application definition
