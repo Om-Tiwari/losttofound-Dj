@@ -1,0 +1,51 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock title %}
+{% block body %}
+{% include 'navbar.html' %}
+
+<div class="bkg__spotlight">
+    <div class="keyboard">
+        <div class="flex justify-center gap-2 my-2 w-full">
+            <kbd class="kbd text-xl">W</kbd>
+            <kbd class="kbd text-xl">E</kbd>
+            <kbd class="kbd text-xl">L</kbd>
+            <kbd class="kbd text-xl">C</kbd>
+            <kbd class="kbd text-xl">O</kbd>
+            <kbd class="kbd text-xl">M</kbd>
+            <kbd class="kbd text-xl">E</kbd>
+            <kbd class="kbd text-xl">🐣</kbd>
+            <kbd class="kbd text-xl">T</kbd>
+            <kbd class="kbd text-xl">O</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-2 w-full">
+            <kbd class="kbd text-xl">L</kbd>
+            <kbd class="kbd text-xl">O</kbd>
+            <kbd class="kbd text-xl">S</kbd>
+            <kbd class="kbd text-xl">T</kbd>
+            <kbd class="kbd text-xl">🤔</kbd>
+            <kbd class="kbd text-xl">T</kbd>
+            <kbd class="kbd text-xl">O</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-2 w-full">
+            <kbd class="kbd text-xl">F</kbd>
+            <kbd class="kbd text-xl">O</kbd>
+            <kbd class="kbd text-xl">U</kbd>
+            <kbd class="kbd text-xl">N</kbd>
+            <kbd class="kbd text-xl">D</kbd>
+            <kbd class="kbd text-xl">😎</kbd>
+        </div>
+    </div>
+    <div class="py-12 px-6 sm:px-12 lg:px-24 xl:px-32">
+        <div class="flex flex-col items-center justify-center space-y-6 sm:space-y-8">
+            <h2 class="text-4xl font-extrabold text-center">Unleashing</h2>
+            <h2 class="text-4xl font-extrabold text-center">the Collective Power</h2>
+            <h2 class="text-4xl font-extrabold text-center">of Open Source Enthusiasts</h2>
+            <blockquote class="text-lg text-center italic">
+                &#x201C;we unite hearts, minds, and code to empower communities, amplify impact, and create
+                a brighter tomorrow.&#x201D;
+            </blockquote>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,27 @@
+{% load static %}
+{% block nav %}
+<div class="navbar bg-base-100 sticky-nav py-0">
+  <div class="flex-1">
+    <a href="{% url 'home' %}" class="p-1"><img class="w-16 rounded" src="{% static 'img/pictures/ltf.png' %}"></a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1 text-xl">
+      {% if request.user.is_authenticated %}
+      <li class="nav-item">
+        <a class="nav-link" id="open-form">File Complaint</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signout' %}">Logout</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signin' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signup' %}">Register</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+{% endblock nav %}
